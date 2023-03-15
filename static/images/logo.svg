@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.58"
+     inkscape:cx="494.82759"
+     inkscape:cy="414.65517"
+     inkscape:window-width="1366"
+     inkscape:window-height="699"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect7969"
+       style="fill:#c0c0c0;fill-opacity:0.830519;fill-rule:evenodd;stroke:#000000;stroke-width:2.97482;stroke-dasharray:none;stroke-opacity:1"
+       d="m 50.105607,121.28329 v 25.24132 c 0,7.6456 6.155324,13.80091 13.800911,13.80091 H 235.41913 c 7.64561,0 13.80093,-6.15531 13.80093,-13.80091 v -25.24132 c -1.00791,5.29874 -6.72307,9.33434 -13.66487,9.33434 H 63.77048 c -6.941805,0 -12.656961,-4.0356 -13.664873,-9.33434 z" />
+    <rect
+       style="fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:2.97482;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7975"
+       width="35.180531"
+       height="25.828209"
+       x="132.06168"
+       y="160.78485"
+       rx="2.4383829"
+       ry="2.4383829" />
+    <rect
+       style="fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:2.97482;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8703"
+       width="82.663086"
+       height="6.6598158"
+       x="108.32037"
+       y="187.54974"
+       rx="5.7294259"
+       ry="0.62873816" />
+    <rect
+       style="fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:2.65929;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8705"
+       width="199.42993"
+       height="116.63248"
+       x="49.947945"
+       y="13.985471"
+       rx="13.822602"
+       ry="11.011008" />
+    <circle
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2.97482;stroke-dasharray:none;stroke-opacity:1"
+       id="path9490"
+       cx="149.58047"
+       cy="146.25117"
+       r="8.064333" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.5824px;line-height:1.25;font-family:'NotoMono Nerd Font Mono';-inkscape-font-specification:'NotoMono Nerd Font Mono';stroke-width:0.393543"
+       x="157.54927"
+       y="105.73171"
+       id="text10815"><tspan
+         sodipodi:role="line"
+         id="tspan10813"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'NotoMono Nerd Font Mono';-inkscape-font-specification:'NotoMono Nerd Font Mono';stroke-width:0.393543"
+         x="157.54927"
+         y="105.73171">Blog</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.5824px;line-height:1.25;font-family:'NotoMono Nerd Font Mono';-inkscape-font-specification:'NotoMono Nerd Font Mono';fill:#0077bb;fill-opacity:0.93725491;stroke-width:0.393543"
+       x="60.735542"
+       y="62.145039"
+       id="text10819"><tspan
+         sodipodi:role="line"
+         id="tspan10817"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'NotoMono Nerd Font Mono';-inkscape-font-specification:'NotoMono Nerd Font Mono';fill:#0077bb;fill-opacity:0.93725491;stroke-width:0.393543"
+         x="60.735542"
+         y="62.145039">C-NERD'S</tspan></text>
+  </g>
+</svg>
