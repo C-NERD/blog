@@ -1,8 +1,6 @@
-# Explaining Locks 🔒
-
 Imagine you have the global variable **count** that is being accessed by multiple threads in parallel. This variable is dangerous because at any point in time 2 or more threads may try to access the variable at once which may lead to memory corruption.
 
-```nim
+```
 import std / [threadpool]
 from std / strformat import fmt
 from std / math import pow
@@ -27,7 +25,7 @@ discard blockUntilAny(threads) ## wait for both threads
 
 In order to avoid multiple threads from reading the same global variable **count** at once you can employ the use of locks. A lock has 2 states **Acquire** and **Release**. If a lock is set to guard a variable from access, a thread must acquire the lock before accessing the variable. Once the lock has been acquired it cannot be acquired by another thread unless it is released by the thread that acquired it. Which means that once a lock guarding a variable is acquired by a thread, other threads cannot access the variable unless the lock is released.
 
-```nim
+```
 import std / [threadpool, locks]
 from std / strformat import fmt
 from std / math import pow

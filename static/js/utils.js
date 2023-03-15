@@ -27,7 +27,13 @@ const menuDom = (darkMode) => `
 
                 Dark Mode
             </div>
-            <div class = "menubtn">
+            <a href = "home.html" class = "menubtn">
+                <div class = "iconbox">
+                    <img class = "icon" src = "../images/icons/house.svg">
+                </div>
+                Home
+            </a>
+            <div class = "menubtn" onclick = "showArticles()">
                 <div class = "iconbox">
                     <img class = "icon" src = "../images/icons/book.svg">
                 </div>
@@ -67,9 +73,10 @@ const menuDom = (darkMode) => `
     </span>
 </span>
 `;
-const articleDom = (name, link) => `
-<a href = "${link}" class = "menu_article">
-    ${name}
+const articleDom = (name, date) => `
+<a href = "${name}.html" class = "menu_article">
+    <h2>${name}</h2>
+    <em>${date}</em>
 </a>
 `
 const articleContainer = (articles) => {
@@ -81,12 +88,15 @@ const articleContainer = (articles) => {
             <div id = "cancelbox" class = "iconbox" onclick = "rmMenu()">
                 <img class = "icon" src = "../images/icons/xmark.svg" alt = "cancel_icon">
             </div>
+            <div id = "backbox" class = "iconbox" onclick = "showMenu()">
+                <img class = "icon" src = "../images/icons/angle-less.svg" alt = "back_icon">
+            </div>
         </nav>
         <span id = "menu_content">
     `;
-    for (article in articles) {
+    for (var pos = 0; pos < articles.length; pos++) {
 
-        opening = opening.concat(`\n${article}`);
+        opening = opening.concat(`\n${articles[pos]}`);
     }
 
     opening = opening.concat(`
@@ -130,6 +140,23 @@ function showMenu() {
     }
 
     body.innerHTML = `${body.innerHTML}\n${menuDom(darkMode)}`;
+}
+
+function showArticles() {
+
+    let body = document.getElementsByTagName("body")[0];
+    let overlayContainer =  document.getElementById("overlay_container");
+    if (overlayContainer !== null) {
+
+        body.removeChild(overlayContainer);
+    }
+
+    var articleDoms = [];
+    for (var pos = 0; pos < articlesData.length; pos++) {
+        
+        articleDoms.push(articleDom(articlesData[pos]["name"], articlesData[pos]["date"]));
+    }
+    body.innerHTML = `${body.innerHTML}\n${articleContainer(articleDoms)}`;
 }
 
 function loadCallback() {
