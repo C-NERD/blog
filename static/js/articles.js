@@ -1,6 +1,6 @@
 const articlesData = [
     {
         "name": "Explaining Locks",
-        "date": "Mar 15 2023"
+        "date": "Mar 16 2023"
     }
 ]

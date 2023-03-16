@@ -16,6 +16,7 @@
   <title>
    Explaining Locks
   </title>
+  <link href="../css/default.min.css" rel="stylesheet"/>
  </head>
  <body onload="loadCallback()">
   <nav id="navbar">
@@ -29,7 +30,7 @@
      Explaining Locks
     </h1>
     <em>
-     Mar 15 2023
+     Mar 16 2023
     </em>
    </span>
    <span id="article">
@@ -40,7 +41,7 @@
      </strong>
      that is being accessed by multiple threads in parallel. This variable is dangerous because at any point in time 2 or more threads may try to access the variable at once which may lead to memory corruption.
     </p>
-    <pre><code>import std / [threadpool]
+    <pre><code class="language-nim">import std / [threadpool]
 from std / strformat import fmt
 from std / math import pow
 
@@ -76,7 +77,7 @@ discard blockUntilAny(threads) ## wait for both threads
      </strong>
      . If a lock is set to guard a variable from access, a thread must acquire the lock before accessing the variable. Once the lock has been acquired it cannot be acquired by another thread unless it is released by the thread that acquired it. Which means that once a lock guarding a variable is acquired by a thread, other threads cannot access the variable unless the lock is released.
     </p>
-    <pre><code>import std / [threadpool, locks]
+    <pre><code class="language-nim">import std / [threadpool, locks]
 from std / strformat import fmt
 from std / math import pow
 
@@ -119,5 +120,10 @@ deinitLock(countLock)
  <script src="../js/utils.js">
  </script>
  <script src="../js/article.js">
+ </script>
+ <script src="../js/highlight.min.js">
+ </script>
+ <script>
+  hljs.highlightAll();
  </script>
 </html>

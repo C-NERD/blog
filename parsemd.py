@@ -111,6 +111,11 @@ def save_article_doc(name : str, article_html : str) -> str :
 
                 tag["src"] = "../js/article.js"
 
+    soup.html.append(bs4.BeautifulSoup("""
+    <script src="../js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    """, "html.parser"))
+
     for tag in soup.html.head:
 
         if tag.name == "title":
@@ -129,9 +134,11 @@ def save_article_doc(name : str, article_html : str) -> str :
 
                 tag["content"] = f"Article {main_name} on C-NERD's blog" ## update description
 
-    main_index = soup.html.body.index(soup.html.body.main)
-    soup.html.body.main.extract()
+    soup.html.head.append(bs4.BeautifulSoup("""
+    <link rel="stylesheet" href="../css/default.min.css">
+    """, "html.parser"))
 
+    soup.html.body.main.extract() ## remove main tag in body tag
     soup.html.body.append(bs4.BeautifulSoup(f"""<main id = "article_content">
     <span id = "article_meta">
         <h1>{main_name}</h1>
@@ -140,7 +147,7 @@ def save_article_doc(name : str, article_html : str) -> str :
     <span id = "article">
         {article_html}
     </span>
-    </main>""", "html.parser")) ## add article data to html
+    </main>""", "html.parser")) ## add article data as main tag to body tag
 
     article_file = Path(__file__).parent / "static" / "templates" / name
     article_file_obj = article_file.open("w+")
