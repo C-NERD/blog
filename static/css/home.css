@@ -26,3 +26,27 @@
     font-size: 1.7rem;
     margin: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+    /*tablet styles*/
+
+    #home_content{
+        flex-direction: column;
+    }
+    
+    #mypic{
+        width: 80%;
+    }
+    
+    #meta p{
+        font-size: 2.0rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /*mobile styles*/
+    
+    #meta p{
+        font-size: 1.2rem;
+    }
+}

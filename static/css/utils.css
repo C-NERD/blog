@@ -184,3 +184,39 @@ input:checked + .slider:before{
     -ms-transform: translateX(22px);
     transform: translateX(22px);
 }
+
+@media only screen and (max-width: 768px) {
+    /*tablet styles*/
+    html, body{
+        font-size: large;
+    }
+
+    .icon{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .iconbox{
+        width: 40px;
+        height: 40px;
+    }
+    
+    #menu{
+        min-width: 55%;
+        min-height: 25%;
+    }
+    
+    .menubtn, .menu_article{
+        width: 80%;
+        padding: 15px 10%;
+    }  
+}
+
+@media only screen and (max-width: 480px) {
+    /*mobile styles*/
+    
+    #menu{
+        min-width: 94%;
+        min-height: 25%;
+    }  
+}

@@ -2,10 +2,10 @@
     width: 80%;
     height: 94%;
     padding: 3% 10%;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;*/
     overflow-y: scroll;
 }
 
@@ -31,3 +31,13 @@
     -moz-border-radius: 6px;
     border-radius: 6px;
 }*/
+
+@media only screen and (max-width: 768px) {
+    /*tablet styles*/
+
+}
+
+@media only screen and (max-width: 480px) {
+    /*mobile styles*/
+    
+}
