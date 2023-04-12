@@ -213,7 +213,7 @@ input:checked + .slider:before{
     /*mobile styles*/
     
     #menu{
-        min-width: 94%;
+        min-width: 90%;
         min-height: 25%;
     }  
 }

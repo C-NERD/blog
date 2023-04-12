@@ -48,18 +48,14 @@
     }
     
     #mypic{
-        width: 80%;
-    }
-    
-    #meta p{
-        font-size: 2.0rem;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 480px) {
     /*mobile styles*/
     
-    #meta p{
-        font-size: 1.2rem;
+    #meta ul li{
+        font-size: 1.0rem;
     }
 }
