@@ -3,7 +3,7 @@ const checkedStr = (darkMode) => {
 
     if (darkMode){
 
-        return `checked = "true"`;
+        return `checked`;
     }else{
 
         return ``;
@@ -113,10 +113,12 @@ function toggleTheme() {
 
         document.documentElement.setAttribute("data-theme", "dark");
         localStorage.setItem("theme", "dark");
+        darkMode = true;
     }else{
 
         document.documentElement.setAttribute("data-theme", "light");
         localStorage.setItem("theme", "light");
+        darkMode = false;
     }
 }
 

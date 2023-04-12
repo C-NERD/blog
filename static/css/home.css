@@ -22,9 +22,22 @@
     padding: 0px 10px;
 }
 
-#meta p{
-    font-size: 1.7rem;
-    margin: 10px;
+#meta ul{
+    margin: 0;
+    list-style: none;
+}
+
+#meta ul li::before{
+    content: "~";
+    color : var(--colored-text01);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#meta ul li{
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
 @media only screen and (max-width: 768px) {

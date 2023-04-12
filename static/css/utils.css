@@ -1,5 +1,8 @@
 :root{
     --transparentlight : rgba(17, 21, 24, 0.45);
+    --colored-text01: #07b;
+    --colored-text02: #607c9f;
+    --colored-text03: #154b77;
 }
 
 [data-theme="light"] {
@@ -7,9 +10,6 @@
     --secondary-background: #f5f5f5;
     --third-background: #e8e8e8;
     --text: #222;
-    --colored-text01: #07b;
-    --colored-text02: #607c9f;
-    --colored-text03: #1fa0eb;
 }
 
 [data-theme="dark"] {
@@ -17,9 +17,6 @@
     --secondary-background: #1e202a;
     --third-background: #2b2e3b;
     --text: #fff;
-    --colored-text01: #8be9fd;
-    --colored-text02: #8be9fd;
-    --colored-text03: #8be9fd;
 }
 
 html, body{
