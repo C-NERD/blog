@@ -14,6 +14,10 @@
     margin-bottom: 20px;
 }
 
+#article img{
+    width: 100%;
+}
+
 /*#article pre{
     font-weight: 500;
     display: inline-block;
