@@ -1,4 +1,4 @@
-#!/bin/python3
+#!venv/bin/python
 ## TODO:: add logging support
 """
 Python script to convert markdown articles located in the markdown directory to html.
