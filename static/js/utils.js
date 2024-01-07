@@ -89,7 +89,7 @@ const articleContainer = (articles) => {
                 <img class = "icon" src = "../images/icons/xmark.svg" alt = "cancel_icon">
             </div>
             <div id = "backbox" class = "iconbox" onclick = "showMenu()">
-                <img class = "icon" src = "../images/icons/angle-less.svg" alt = "back_icon">
+                <img class = "icon" src = "../images/icons/back.png" alt = "back_icon">
             </div>
         </nav>
         <span id = "menu_content">
